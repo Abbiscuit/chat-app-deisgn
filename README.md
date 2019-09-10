@@ -6,4 +6,4 @@
 
 - live-server (devDependencies)
 
-`npm start`
+`npm i && npm start`
