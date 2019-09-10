@@ -1,0 +1,534 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+input {
+  margin: 0;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 100px;
+  margin-bottom: 16px;
+
+  background-color: #222;
+}
+
+.nav .logo {
+  color: #fff;
+
+  font-size: 24px;
+  width: 50%;
+}
+
+/* nav-list */
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.nav-list .nav-item {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 16px;
+    height: 100px;
+
+    background-color: #222;
+  }
+
+  .nav .logo {
+    text-align: center;
+    width: 100%;
+    margin: 8px;
+  }
+
+  /* nav-list */
+  .nav-list {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* Talk Page */
+
+.talk-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.talk-page .title {
+  margin-bottom: 16px;
+}
+
+.talk-page .alert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+  background-color: #fa4242;
+  color: #fff;
+}
+
+/* Talk Area */
+
+.talk-area {
+  margin-bottom: 16px;
+}
+
+.talk-area .talk {
+  width: 100%;
+  height: 200px;
+  margin: 16px 0;
+}
+
+.talk-area .button {
+  padding: 8px 16px;
+  width: 96px;
+  font-size: 16px;
+  border: none;
+  background-color: #fa4242;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .talk-page .alert {
+    width: 100%;
+  }
+
+  .talk-page .talk {
+    font-size: 16px;
+  }
+
+  .talk-area .button {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+
+    color: #fff;
+    background-color: #e02323;
+  }
+}
+
+/* Card */
+.card {
+  display: flex;
+  padding: 40px 25px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.card-image-section {
+  width: 30%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.card-image {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.card-comment-section {
+  width: 90%;
+}
+
+.card-comment-section .card-comment {
+  margin-bottom: 16px;
+}
+
+.card-comment-section .button {
+  padding: 8px 16px;
+  background-color: #fa4242;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .card-image-section {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px auto;
+  }
+
+  .card-image-section .card-image {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .card .card-comment-section p {
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  .card .card-comment-section .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+    background-color: #e02323;
+  }
+}
+
+/* Profile Page */
+
+.profile-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-page .title {
+  margin-bottom: 16px;
+}
+
+.profile-page .alert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+  background-color: #fa4242;
+  color: #fff;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 16px 0;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.profile .profile-image-section {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.profile-image-section .profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-social {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile-social a {
+  padding: 8px 16px;
+  background-color: #fa4242;
+  color: #fff;
+  margin: 8px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.skills .name {
+  margin-bottom: 16px;
+}
+
+.skills .skills-list {
+  margin-bottom: 16px;
+}
+
+.edit-profile-button {
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: 0 auto 16px;
+  padding: 8px 16px;
+  background-color: #fa4242;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    padding: 8px;
+  }
+
+  .profile-page .alert {
+    width: 100%;
+  }
+
+  .profile-social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-social a {
+    width: 80px;
+  }
+
+  .skills .name {
+    font-size: 22px;
+  }
+
+  .edit-profile-button {
+    width: 100%;
+  }
+}
+
+/* Sign Up Page */
+
+.signup-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.signup-page a {
+  text-decoration: underline;
+}
+.signup-page .title {
+  margin-bottom: 16px;
+}
+
+.signup-page .alert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+  background-color: #fa4242;
+  color: #fff;
+}
+
+.signup-page .signup-area {
+  margin: 16px 0;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.signup-page .signup-area input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.signup-page .signup-area .button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background-color: #e02323;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .signup-page a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signup-page .alert {
+    width: 100%;
+  }
+
+  .signup-page .signup-area .button {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0px;
+    background-color: #e02323;
+    color: #fff;
+  }
+}
+
+/* Sign In Page */
+
+.signin-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.signin-page a {
+  text-decoration: underline;
+}
+
+.signin-page .title {
+  margin-bottom: 16px;
+}
+
+.signin-page .alert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+  background-color: #fa4242;
+  color: #fff;
+}
+
+.signin-page .signin-area {
+  margin: 16px 0;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.signin-page .signin-area input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.signin-page .signin-area .button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background-color: #e02323;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .signin-page a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signin-page .alert {
+    width: 100%;
+  }
+
+  .signin-page .signin-area .button {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    background-color: #e02323;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+}
+
+/* Edit Profile Page */
+
+.edit-profile-page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.edit-profile-page a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #e73131;
+  text-decoration: underline;
+}
+
+.edit-profile-page .title {
+  margin-bottom: 16px;
+}
+
+.edit-profile-page .alert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+  background-color: #fa4242;
+  color: #fff;
+}
+
+.edit-profile-page .edit-profile-area {
+  margin: 16px 0;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.edit-profile-page .edit-profile-area input,
+textarea {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.edit-profile-page .edit-profile-area .button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background-color: #fa4242;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .edit-profile-page a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .edit-profile-page .alert {
+    width: 100%;
+  }
+
+  .edit-profile-page .edit-profile-area .button {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fa4242;
+    color: #fff;
+    margin: 0;
+  }
+}
