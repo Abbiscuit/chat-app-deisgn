@@ -1,3 +1,24 @@
+/* 
+
+基本のサイズ
+
+コンポーネント内
+padding: 4p 8px;   --- XS
+padding: 8px 16px; --- SM
+padding: 16px 20px --- MD
+
+コンポーネント外
+padding: 20px 20px
+
+
+
+
+*/
+
+/******************
+  Global Styling
+*********************8*/
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +26,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -13,522 +34,228 @@ a {
   color: #222;
 }
 
-input {
-  margin: 0;
+ul,
+li {
+  list-style-type: none;
 }
 
-/* nav */
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/******************
+  Min Page (Post Feed)
+*********************8*/
+
+/* Navbar */
 .nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 24px;
-  height: 100px;
-  margin-bottom: 16px;
 
-  background-color: #222;
+  padding: 16px 20px 0;
+  width: 100%;
+
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .nav .logo {
-  color: #fff;
-
-  font-size: 24px;
-  width: 50%;
-}
-
-/* nav-list */
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-}
-
-.nav-list .nav-item {
-  color: #fff;
-  font-size: 16px;
-  padding: 8px 16px;
-}
-
-@media screen and (max-width: 500px) {
-  .nav {
-    flex-direction: column;
-    justify-content: center;
-    padding: 8px 16px;
-    height: 100px;
-
-    background-color: #222;
-  }
-
-  .nav .logo {
-    text-align: center;
-    width: 100%;
-    margin: 8px;
-  }
-
-  /* nav-list */
-  .nav-list {
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-
-/* Talk Page */
-
-.talk-page {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.talk-page .title {
-  margin-bottom: 16px;
-}
-
-.talk-page .alert {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50px;
-
-  background-color: #fa4242;
-  color: #fff;
-}
-
-/* Talk Area */
-
-.talk-area {
-  margin-bottom: 16px;
-}
-
-.talk-area .talk {
-  width: 100%;
-  height: 200px;
-  margin: 16px 0;
-}
-
-.talk-area .button {
-  padding: 8px 16px;
-  width: 96px;
-  font-size: 16px;
-  border: none;
-  background-color: #fa4242;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-  .talk-page .alert {
-    width: 100%;
-  }
-
-  .talk-page .talk {
-    font-size: 16px;
-  }
-
-  .talk-area .button {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-
-    color: #fff;
-    background-color: #e02323;
-  }
-}
-
-/* Card */
-.card {
-  display: flex;
-  padding: 40px 25px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
-
-.card-image-section {
-  width: 30%;
-  height: auto;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.card-image {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-}
-
-.card-comment-section {
-  width: 90%;
-}
-
-.card-comment-section .card-comment {
-  margin-bottom: 16px;
-}
-
-.card-comment-section .button {
-  padding: 8px 16px;
-  background-color: #fa4242;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-  .card {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-  }
-
-  .card-image-section {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 16px auto;
-  }
-
-  .card-image-section .card-image {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .card .card-comment-section p {
-    line-height: 1.8;
-    font-size: 16px;
-  }
-
-  .card .card-comment-section .button {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 16px;
-    background-color: #e02323;
-  }
-}
-
-/* Profile Page */
-
-.profile-page {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.profile-page .title {
-  margin-bottom: 16px;
-}
-
-.profile-page .alert {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50px;
-
-  background-color: #fa4242;
-  color: #fff;
-}
-
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  margin: 16px 0;
-  padding: 25px;
-  background-color: #fff;
-}
-
-.profile .profile-image-section {
-  width: 150px;
-  margin: 0 auto;
-}
-
-.profile-image-section .profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.profile-social {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.profile-social a {
-  padding: 8px 16px;
-  background-color: #fa4242;
-  color: #fff;
-  margin: 8px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
-
-.skills .name {
-  margin-bottom: 16px;
-}
-
-.skills .skills-list {
-  margin-bottom: 16px;
-}
-
-.edit-profile-button {
-  display: block;
-  text-align: center;
-  width: 100px;
-  margin: 0 auto 16px;
-  padding: 8px 16px;
-  background-color: #fa4242;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-  .profile {
-    padding: 8px;
-  }
-
-  .profile-page .alert {
-    width: 100%;
-  }
-
-  .profile-social {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .profile-social a {
-    width: 80px;
-  }
-
-  .skills .name {
-    font-size: 22px;
-  }
-
-  .edit-profile-button {
-    width: 100%;
-  }
-}
-
-/* Sign Up Page */
-
-.signup-page {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.signup-page a {
-  text-decoration: underline;
-}
-.signup-page .title {
-  margin-bottom: 16px;
-}
-
-.signup-page .alert {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50px;
-
-  background-color: #fa4242;
-  color: #fff;
-}
-
-.signup-page .signup-area {
-  margin: 16px 0;
-  padding: 25px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-.signup-page .signup-area input {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-.signup-page .signup-area .button {
-  display: block;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background-color: #e02323;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-  .signup-page a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .signup-page .alert {
-    width: 100%;
-  }
-
-  .signup-page .signup-area .button {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 0px;
-    background-color: #e02323;
-    color: #fff;
-  }
-}
-
-/* Sign In Page */
-
-.signin-page {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.signin-page a {
-  text-decoration: underline;
-}
-
-.signin-page .title {
-  margin-bottom: 16px;
-}
-
-.signin-page .alert {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50px;
-
-  background-color: #fa4242;
-  color: #fff;
-}
-
-.signin-page .signin-area {
-  margin: 16px 0;
-  padding: 25px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-.signin-page .signin-area input {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-.signin-page .signin-area .button {
-  display: block;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background-color: #e02323;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-  .signin-page a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .signin-page .alert {
-    width: 100%;
-  }
-
-  .signin-page .signin-area .button {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    background-color: #e02323;
-    color: #fff;
-    margin-bottom: 0px;
-  }
-}
-
-/* Edit Profile Page */
-
-.edit-profile-page {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.edit-profile-page a {
   display: inline-block;
-  width: 150px;
-  text-align: center;
-  padding: 8px;
-  font-size: 16px;
-  margin-bottom: 16px;
-  color: #e73131;
-  text-decoration: underline;
+  font-size: 24px;
+
+  font-weight: bold;
+  color: #ff183e;
 }
 
-.edit-profile-page .title {
-  margin-bottom: 16px;
-}
-
-.edit-profile-page .alert {
+.nav .nav-list {
   display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  background-color: #fa4242;
+.nav-list .nav-list-item a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 16px 10px;
+}
+
+/* Section  */
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Post Feed */
+/* .post-feed {
+} */
+
+.post-feed .post-detail {
+  padding: 16px 20px;
+  background-color: #fff;
+
+  margin-bottom: 20px;
+}
+
+.post-feed .post-detail-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-feed .post-detail-date {
+  font-size: 12px;
+  color: #808080;
+}
+
+.post-feed .post-detail-author {
+  font-weight: bold;
+}
+
+.post-feed .post-detail-options {
+  margin-top: 16px;
+}
+
+.post-detail .post-image-figure {
+  text-align: center;
+}
+
+.post-image-figure .post-image {
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 24px;
+
+  background-color: #fff;
+  border: 2px solid #ff5d5d;
+  color: #ff5d5d;
+}
+
+.button:hover {
+  background-color: #ff5d5d;
+  border: 2px solid #ff5d5d;
   color: #fff;
 }
 
-.edit-profile-page .edit-profile-area {
-  margin: 16px 0;
-  padding: 25px;
+/* Like Button */
+.button.button-icon {
+  padding: 0;
+  margin-right: 8px;
+  border-radius: 0;
+  height: auto;
+  border: none;
   background-color: #fff;
+  color: #333;
+}
+
+/******************
+  Profile Page
+*********************8*/
+
+.post-detail .post-image-figure {
+  text-align: center;
+}
+
+.post-image-figure .post-image.post-image-large {
+  margin-bottom: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/************
+ Register & Login Page
+*************/
+
+.form-section .form-detail {
+  padding: 16px 20px;
+  background-color: #fff;
+
+  margin-bottom: 20px;
+}
+
+.form-section .form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.form-section .form-detail-options {
+  margin-top: 16px;
+}
+
+.form-section input[type='text'],
+.form-section input[type='email'],
+.form-section input[type='password'] {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
   border: 1px solid #ddd;
 }
 
-.edit-profile-page .edit-profile-area input,
-textarea {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-.edit-profile-page .edit-profile-area .button {
+.form-section .button-block {
   display: block;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background-color: #fa4242;
-  color: #fff;
+  width: 40%;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 500px) {
-  .edit-profile-page a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 16px;
-  }
+.form-section .form-detail-options .has-account {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: underline;
+}
 
-  .edit-profile-page .alert {
-    width: 100%;
-  }
+/****************
+  Developers Page
+*************** */
+.devs-section .devs-detail {
+  padding: 16px 20px;
+  background-color: #fff;
 
-  .edit-profile-page .edit-profile-area .button {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    background-color: #fa4242;
-    color: #fff;
-    margin: 0;
-  }
+  margin-bottom: 20px;
+}
+
+.devs-section .devs-detail-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.devs-section .devs-detail-date {
+  font-size: 12px;
+  color: #808080;
+}
+
+.devs-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.devs-image-figure {
+  width: 30%;
+}
+
+.devs-image-figure .devs-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.devs-name {
+  width: 70%;
+  margin-left: 16px;
 }

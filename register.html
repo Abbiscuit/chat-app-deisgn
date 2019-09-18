@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Profile | TORISO</title>
+    <title>Register| TORISO</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -37,31 +37,38 @@
         <a href="/">Back</a>
       </h2>
 
-      <section class="post-feed">
-        <div class="post-detail">
-          <figure class="post-image-figure">
-            <a href="./profile.html"
-              ><img
-                src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=989&q=80"
-                alt=""
-                class="post-image post-image-large"
-            /></a>
-          </figure>
-          <p class="post-detail-title">Reactを勉強しています！</p>
-          <p class="post-detail-date">
-            Posted by <span class="post-detail-author">HIROSHI</span> on
-            2019/09/12
-          </p>
-          <div class="post-detail-options">
-            <button class="button button-icon">
-              <i class="fas fa-thumbs-up"></i>
-              <span>3</span>
-            </button>
-            <button class="button button-icon">
-              <i class="fas fa-thumbs-down"></i>
-              <span>0</span>
-            </button>
-            <a href="#" class="button">コメント 10件</a>
+      <section class="form-section">
+        <h3 class="form-title">新規登録</h3>
+        <div class="form-detail">
+          <form>
+            <input type="text" name="name" id="name" placeholder="お名前" />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Eメールアドレス"
+            />
+
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="パスワード"
+            />
+
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="パスワード確認"
+            />
+            <input type="submit" value="登録する" class="button button-block" />
+          </form>
+          <div class="form-detail-options">
+            <a href="/login.html" class="has-account"
+              >すでにアカウントをお持ちの方はこちら</a
+            >
           </div>
         </div>
       </section>
