@@ -1,6 +1,6 @@
-# Chat App Design
+# TORISO
 
-![image](https://user-images.githubusercontent.com/10560950/64618281-ece24200-d41a-11e9-87b4-23c4a39e5046.png)
+![image](https://user-images.githubusercontent.com/10560950/65242315-a8dcf480-db20-11e9-9c56-34d8785aec98.png)
 
 **npm packages**
 
