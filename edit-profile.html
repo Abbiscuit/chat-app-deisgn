@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Register| TORISO</title>
+    <title>Edit Profile| TORISO</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -36,42 +36,47 @@
 
     <div class="container">
       <h2 class="section-title">
-        <a href="/"> <i class="fas fa-arrow-left"></i></a>
+        <a href="/">Back</a>
       </h2>
 
       <section class="form-section">
-        <h3 class="form-title">新規登録</h3>
+        <h3 class="form-title">プロフィール編集</h3>
         <div class="form-detail">
           <form>
-            <input type="text" name="name" id="name" placeholder="お名前" />
-
+            <label for="skills">学んでいるスキル</label>
             <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Eメールアドレス"
+              type="text"
+              name="skills"
+              id="skills"
+              placeholder="例: HTML, CSS, PHP"
             />
 
+            <label for="how-to">どうやって？</label>
             <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="パスワード"
+              type="text"
+              name="how-to"
+              id="how-to"
+              placeholder="例: 教本名、コース名など"
             />
 
+            <label for="about-me">わたしについて</label>
+            <textarea
+              type="text"
+              name="about-me"
+              id="about-me"
+              placeholder="自己紹介を書いてください。今どんな勉強をしているか等を紹介してください。"
+            ></textarea>
+
+            <label for="github-account">GitHub連携</label>
             <input
-              type="password"
-              name="confirm-password"
-              id="confirm-password"
-              placeholder="パスワード確認"
+              type="text"
+              name="github-account"
+              id="github-account"
+              placeholder="githubusername"
             />
-            <input type="submit" value="登録する" class="button button-block" />
+
+            <input type="submit" value="更新" class="button button-block" />
           </form>
-          <div class="form-detail-options">
-            <a href="/login.html" class="has-account"
-              >すでにアカウントをお持ちの方はこちら</a
-            >
-          </div>
         </div>
       </section>
     </div>

@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>TORISO</title>
+    <title>Post | TORISO</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -35,9 +35,19 @@
     </nav>
 
     <div class="container">
-      <h2 class="section-title">タイムライン</h2>
+      <h2 class="section-title">新規投稿</h2>
 
       <section class="post-feed">
+        <form>
+          <textarea
+            type="text"
+            name="about-me"
+            id="about-me"
+            placeholder="コメントを入力しよう。"
+          ></textarea>
+
+          <input type="submit" value="投稿" class="button button-block" />
+        </form>
         <div class="post-detail">
           <figure class="post-image-figure">
             <a href="./profile.html"

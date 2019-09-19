@@ -10,9 +10,6 @@ padding: 16px 20px --- MD
 コンポーネント外
 padding: 20px 20px
 
-
-
-
 */
 
 /******************
@@ -42,6 +39,21 @@ li {
 /* Container */
 .container {
   padding: 20px;
+  margin-top: 104px;
+}
+
+@media screen and (min-width: 896px) {
+  .container {
+    width: 60%;
+    margin: 104px auto 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 50%;
+    margin: 120px auto 0;
+  }
 }
 
 /******************
@@ -54,6 +66,9 @@ li {
   flex-direction: column;
   align-items: center;
 
+  position: fixed;
+  top: 0;
+  z-index: 1;
   padding: 16px 20px 0;
   width: 100%;
 
@@ -86,6 +101,28 @@ li {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: normal;
+}
+
+@media screen and (min-width: 896px) {
+  .nav {
+    flex-direction: row;
+    padding: 16px 100px 0;
+  }
+
+  .nav .nav-list {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    flex-direction: row;
+    padding: 16px 120px;
+  }
+
+  .nav .nav-list {
+    justify-content: flex-end;
+  }
 }
 
 /* Post Feed */
@@ -161,15 +198,81 @@ li {
   Profile Page
 *********************8*/
 
-.post-detail .post-image-figure {
-  text-align: center;
+.profile-section .profile-detail {
+  padding: 16px 20px;
+  background-color: #fff;
+
+  margin-bottom: 20px;
 }
 
-.post-image-figure .post-image.post-image-large {
+.profile-image-figure .profile-image.profile-image-large {
   margin-bottom: 16px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.profile-detail .profile-image-figure {
+  text-align: center;
+}
+
+.profile-section .profile-detail-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.profile-section .profile-detail-options {
+  margin-top: 16px;
+}
+
+.profile-section .profile-detail-options .skills,
+.how-to,
+.about-me {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.profile-section .profile-detail-options .list {
+  margin-bottom: 36px;
+}
+
+.profile-section .profile-detail-options .list-item {
+  font-size: 14px;
+  margin-bottom: 8px;
+
+  font-weight: normal;
+}
+
+.profile-section .profile-detail-options .about-me-description {
+  font-size: 14px;
+  margin-bottom: 36px;
+  line-height: 2;
+  font-weight: normal;
+}
+
+.profile-section .button-block {
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.github-list .github-item {
+  padding: 8px 16px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+.github-list .github-item .github-item-title {
+  font-size: 18px;
+}
+
+.github-list .github-item .github-item-description {
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 /************
@@ -258,4 +361,51 @@ li {
 .devs-name {
   width: 70%;
   margin-left: 16px;
+}
+
+/************
+Edit Profile Page
+*************/
+
+.form-section textarea {
+  display: block;
+  width: 100%;
+  height: 240px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.form-section label {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  color: #333;
+}
+
+/************
+Posts Comment Page
+*************/
+
+.post-feed textarea {
+  display: block;
+  width: 100%;
+  height: 240px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.post-feed .button-block {
+  display: block;
+  width: 40%;
+  margin: -8px auto 24px;
+}
+
+.post-feed .post-detail-comments {
+  margin-bottom: 16px;
+  line-height: 1.8;
+  color: #333;
 }

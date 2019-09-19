@@ -21,7 +21,9 @@
       </a>
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a href="/developers.html">デベロッパーズ</a>
+          <a href="/developers.html"
+            ><i class="fas fa-users"></i> デベロッパー</a
+          >
         </li>
         <li class="nav-list-item">
           <a href="/register.html">新規登録</a>
@@ -34,34 +36,72 @@
 
     <div class="container">
       <h2 class="section-title">
-        <a href="/">Back</a>
+        <a href="/">
+          <i class="fas fa-arrow-left"></i>
+        </a>
       </h2>
 
-      <section class="post-feed">
-        <div class="post-detail">
-          <figure class="post-image-figure">
+      <section class="profile-section">
+        <div class="profile-detail">
+          <figure class="profile-image-figure">
             <a href="./profile.html"
               ><img
                 src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=989&q=80"
                 alt=""
-                class="post-image post-image-large"
+                class="profile-image profile-image-large"
             /></a>
           </figure>
-          <p class="post-detail-title">Reactを勉強しています！</p>
-          <p class="post-detail-date">
-            Posted by <span class="post-detail-author">HIROSHI</span> on
-            2019/09/12
-          </p>
-          <div class="post-detail-options">
-            <button class="button button-icon">
-              <i class="fas fa-thumbs-up"></i>
-              <span>3</span>
-            </button>
-            <button class="button button-icon">
-              <i class="fas fa-thumbs-down"></i>
-              <span>0</span>
-            </button>
-            <a href="#" class="button">コメント 10件</a>
+          <p class="profile-detail-title">HIROSHI</p>
+
+          <div class="profile-detail-options">
+            <h3 class="skills">
+              学んでいるスキル
+            </h3>
+            <ul class="list">
+              <li class="list-item">React</li>
+              <li class="list-item">JavaScript(ES6)</li>
+              <li class="list-item">Ruby</li>
+              <li class="list-item">Ruby on Rails</li>
+            </ul>
+            <h3 class="how-to">
+              どうやって？
+            </h3>
+            <ul class="list">
+              <li class="list-item">Udemy</li>
+              <li class="list-item">Progate</li>
+              <li class="list-item">絶対に挫折しないRails入門（教本）</li>
+            </ul>
+            <h3 class="about-me">
+              わたしについて
+            </h3>
+            <p class="about-me-description">
+              現在Udemyを中心に、JSやReactの動画講座にて学習をしています。
+              今後はRailsチュートリアルをやってみようと思います！
+            </p>
+
+            <div class="github-list">
+              <p class="section-title">
+                GitHub
+              </p>
+
+              <div class="github-item">
+                <p class="github-item-title">Deisgn Original Chat App</p>
+                <span class="github-item-description"
+                  >Original Design Template for Chat App</span
+                >
+              </div>
+
+              <div class="github-item">
+                <p class="github-item-title">Pomodoro timer apps</p>
+                <span class="github-item-description"
+                  >Enhance your learning ability with this Pomodoro timer</span
+                >
+              </div>
+            </div>
+
+            <a href="/edit-profile.html" class="button button-block"
+              >編集する</a
+            >
           </div>
         </div>
       </section>
