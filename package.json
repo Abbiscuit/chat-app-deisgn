@@ -4,12 +4,12 @@
   "description": "![image](https://user-images.githubusercontent.com/10560950/65242315-a8dcf480-db20-11e9-9c56-34d8785aec98.png)",
   "main": "index.js",
   "scripts": {
-    "start": "live-server ."
+    "start": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "vite": "^6.3.5"
   }
 }
